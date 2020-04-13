@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="330.0" prefWidth="370.0" style="-fx-background-color: #A6A5A4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewAllController">
+   <children>
+      <TableView fx:id="inboxList" layoutX="15.0" layoutY="15.0" prefHeight="300.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="name" maxWidth="145.0" minWidth="145.0" prefWidth="145.0" text="Name" />
+          <TableColumn fx:id="sub" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" text="Subscribed" />
+        </columns>
+      </TableView>
+      <Button fx:id="button" contentDisplay="CENTER" layoutX="255.0" layoutY="115.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="70.0" prefWidth="100.0" text="Change subscription status" textAlignment="CENTER" wrapText="true" />
+   </children>
+</Pane>

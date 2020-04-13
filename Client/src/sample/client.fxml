@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="250.0" maxWidth="500.0" minHeight="250.0" minWidth="500.0" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #A6A5A4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="connection" prefHeight="250.0" prefWidth="500.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" focusTraversable="false" layoutX="25.0" layoutY="84.0" maxHeight="50.0" maxWidth="225.0" minHeight="50.0" minWidth="225.0" prefHeight="50.0" prefWidth="225.0" style="-fx-text-fill: #403D3D;" text="Enter server adress:" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ipAdress" alignment="CENTER" layoutX="271.0" layoutY="88.0" maxHeight="50.0" maxWidth="225.0" minHeight="37.0" minWidth="169.0" prefHeight="42.0" prefWidth="169.0" text="127.0.0.1">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </TextField>
+            <Button fx:id="connect" layoutX="205.0" layoutY="175.0" maxHeight="40.0" maxWidth="90.0" minHeight="40.0" minWidth="90.0" mnemonicParsing="false" onAction="#connectButtonPressed" prefHeight="40.0" prefWidth="90.0" text="Connect">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" focusTraversable="false" layoutY="14.0" maxHeight="50.0" maxWidth="500.0" minHeight="50.0" minWidth="500.0" prefHeight="50.0" prefWidth="500.0" style="-fx-text-fill: #0D0D0D;" text="IMAP4 CLIENT" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutY="225.0" maxHeight="25.0" maxWidth="500.0" minHeight="25.0" minWidth="500.0" prefHeight="25.0" prefWidth="500.0" style="-fx-text-fill: #403D3D;" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Pane fx:id="login" prefHeight="250.0" prefWidth="500.0" visible="false">
+         <children>
+            <Button fx:id="loginButton" layoutX="205.0" layoutY="175.0" mnemonicParsing="false" onAction="#loginButtonPressed" prefHeight="40.0" prefWidth="90.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER_RIGHT" focusTraversable="false" layoutX="25.0" layoutY="61.0" maxHeight="50.0" maxWidth="225.0" minHeight="50.0" minWidth="225.0" prefHeight="50.0" prefWidth="225.0" style="-fx-text-fill: #403D3D;" text="User name:" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" focusTraversable="false" layoutX="25.0" layoutY="114.0" maxHeight="50.0" maxWidth="225.0" minHeight="50.0" minWidth="225.0" prefHeight="50.0" prefWidth="225.0" style="-fx-text-fill: #403D3D;" text="Password:" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName" layoutX="271.0" layoutY="65.0" maxHeight="40.0" maxWidth="175.0" minHeight="40.0" minWidth="175.0" prefHeight="40.0" prefWidth="175.0">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="271.0" layoutY="119.0" maxHeight="40.0" maxWidth="175.0" minHeight="40.0" minWidth="175.0" prefHeight="40.0" prefWidth="175.0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
