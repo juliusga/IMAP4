@@ -1,0 +1,7 @@
+inbox1          /s
+inbox2          /s
+inbox5          /s
+inbox4          /s
+inbox6          /s
+inbox7          /s
+inbox8          /u
